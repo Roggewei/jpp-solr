@@ -1,0 +1,12 @@
+<dataConfig>
+    <dataSource driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/db_yotaphone" user="root" password="root"/>
+    <document>
+      <entity name="customer"  query="select id,user_name,mobile,company_name from yt_customer">
+       <field name="id" column="id" />
+       <field name="user_name" column="user_name" />
+       <field name="mobile" column="mobile" />
+     <field name="company_name" column="company_name"/>
+     </entity>
+        <!--column数据库字段 name 域字段-->
+    </document>
+</dataConfig>
